@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
 
 # Copy the application code
-COPY main.py .
+COPY . .
 
 # Expose the port
 EXPOSE 6780
